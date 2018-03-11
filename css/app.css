@@ -10,5 +10,14 @@
 }
 
 .border:hover {
-    background-color: lightgray;
+    background-color: rgb(240,240,240);
+}
+
+.mona {
+    cursor: pointer;
+
+}
+
+.mona:hover {
+    color: rgb(200,0,0);
 }

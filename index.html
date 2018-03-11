@@ -17,17 +17,24 @@
       </div>
 
       <div class="callout">
-        <div class="grid-x grid-padding-x">
+        <div class="grid-x grid-margin-x grid-margin-y">
           <div class="cell medium-4 border"><img class="language-logo" src="./images/java.png"></img></div>
           <div class="cell medium-4 border"><img class="language-logo" src="./images/csharp.svg"></img></div>
           <div class="cell medium-4 border"><img class="language-logo" src="./images/typescript.png"></img></div>
         </div>
-        <div class="grid-x grid-padding-x">
+        <div class="grid-x grid-margin-x grid-margin-y">
           <div class="cell medium-4 border"><img class="language-logo" src="./images/c++.jpg"></img></div>
           <div class="cell medium-4 border"><img class="language-logo" src="./images/python.svg"></img></div>
-          <div class="cell medium-4 border"><img class="language-logo" src="./images/hadoop.png"></img></div>
+          <div class="cell medium-4 border"><a class="button" id="trigger"><img class="language-logo" src="./images/hadoop.png"></img></a></div>
         </div>
       </div>
+      <div class="callout input">
+        <input id="inputH" type="text" placeholder="Gewünschte Anzahl an Herzchen für Mona"/>
+        <input id="inputK" type="text" placeholder="Anzahl Knochen für Nemo"/>
+      </div>
+
+      <div class="callout mona" id="target"></div>
+      
 
     </div>
 
@@ -35,5 +42,30 @@
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
+    <script>
+    document.getElementById('trigger').onclick = function() {
+      var herzchen = ' \u2764 \u2623'
+      var herzchenString = "";
+      var anzahlHerzchen = document.getElementById('inputH').value;
+      console.log(anzahlHerzchen);
+
+      for (var j = 0; j < anzahlHerzchen; j++){
+        herzchenString += herzchen;
+      }
+      var list = document.createElement("ul");
+      document.getElementById("target").appendChild(list);
+      list.innerText = herzchenString;
+      console.log(herzchenString)
+      list.appendChild(listItem);
+      /*
+      for (var i = 2; i < 10; i++) {
+        var text = "Hallo Mona hier sind " + i + '';
+        var listItem = document.createElement("li");
+        listItem.innerText = text;
+        list.appendChild(listItem);
+      }
+      */
+    }
+    </script>
   </body>
 </html>
