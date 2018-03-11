@@ -25,12 +25,15 @@
         <div class="grid-x grid-margin-x grid-margin-y">
           <div class="cell medium-4 border"><img class="language-logo" src="./images/c++.jpg"></img></div>
           <div class="cell medium-4 border"><img class="language-logo" src="./images/python.svg"></img></div>
-          <div class="cell medium-4 border"><a class="button" id="trigger"><img class="language-logo" src="./images/hadoop.png"></img></a></div>
+          <div class="cell medium-4 border"><img class="language-logo" src="./images/hadoop.png"></img></div>
         </div>
       </div>
-      <div class="callout input">
-        <input id="inputH" type="text" placeholder="Gewünschte Anzahl an Herzchen für Mona"/>
-        <input id="inputK" type="text" placeholder="Anzahl Knochen für Nemo"/>
+      <div class="input-group">
+        <span class="input-group-label">&#9829;</span>
+        <input class="input-group-field" id="inputH" placeholder="Gewünschte Anzahl an Herzchen für Mona" type="number">
+        <div class="input-group-button">
+          <input type="submit" id="trigger" class="button" value="Submit">
+        </div>
       </div>
 
       <div class="callout mona" id="target"></div>
@@ -44,7 +47,7 @@
     <script src="js/app.js"></script>
     <script>
     document.getElementById('trigger').onclick = function() {
-      var herzchen = ' \u2764 \u2623'
+      var herzchen = ' \u2764'
       var herzchenString = "";
       var anzahlHerzchen = document.getElementById('inputH').value;
       console.log(anzahlHerzchen);
