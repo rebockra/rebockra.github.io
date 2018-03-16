@@ -25,10 +25,73 @@
         <div class="grid-x grid-margin-x grid-margin-y">
           <div class="cell medium-4 border"><img class="language-logo" src="./images/c++.jpg"></img></div>
           <div class="cell medium-4 border"><img class="language-logo" src="./images/python.svg"></img></div>
-          <div class="cell medium-4 border"><img class="language-logo" src="./images/hadoop.png"></img></div>
+          <div class="cell medium-4 border"><img class="language-logo" src="./images/angular.png"></img></div>
         </div>
       </div>
-      <div class="input-group">
+    </div>
+
+    <div class="grid-container full">
+      <div class="callout">
+      <div class="grid-x grid-margin-y">
+        <div class="cell auto margin-top-3 margin-bottom-3"><img src="./images/background_stripe.png"></div>
+      </div>
+    </div>
+    </div>
+
+
+      <div class="grid-container fluid">
+        <div class="grid-x grid-margin-x">
+          <div class="cell medium-4">
+            <div class="callout">
+              <ul class="accordion" data-accordion data-allow-all-closed="true">
+                <li class="accordion-item" data-accordion-item>
+                  <h2 class="h5">Work</h2>
+                  <a href="#" class="accordion-title">Accordion 1</a>
+          
+              
+                  <div class="accordion-content" data-tab-content>
+                    <p>Panel 1. Lorem ipsum dolor</p>
+                    <a href="#">Nowhere to Go</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="cell medium-4">
+              <div class="callout">
+                <ul class="accordion" data-accordion data-allow-all-closed="true">
+                  <li class="accordion-item" data-accordion-item>
+                      <h2 class="h5">Motivation</h2>
+                    <a href="#" class="accordion-title">Accordion 1</a>
+            
+                
+                    <div class="accordion-content" data-tab-content>
+                      <p>Panel 1. Lorem ipsum dolor</p>
+                      <a href="#">Nowhere to Go</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="cell medium-4">
+                <div class="callout">
+                  <ul class="accordion" data-accordion data-allow-all-closed="true">
+                    <li class="accordion-item" data-accordion-item>
+                        <h2 class="h5">Resume</h2>
+                      <a href="#" class="accordion-title">Accordion 1</a>
+              
+                  
+                      <div class="accordion-content" data-tab-content>
+                        <p>Panel 1. Lorem ipsum dolor</p>
+                        <a href="#">Nowhere to Go</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+        </div>
+      </div>
+      <!--div class="input-group">
         <span class="input-group-label">&#9829;</span>
         <input class="input-group-field" id="inputH" placeholder="Gewünschte Anzahl an Herzchen für Mona" type="number">
         <div class="input-group-button">
@@ -36,39 +99,14 @@
         </div>
       </div>
 
-      <div class="callout mona" id="target"></div>
+      <div class="callout mona" id="target"></div!-->
       
-
-    </div>
+      </div>
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
-    <script>
-    document.getElementById('trigger').onclick = function() {
-      var herzchen = ' \u2764'
-      var herzchenString = "";
-      var anzahlHerzchen = document.getElementById('inputH').value;
-      console.log(anzahlHerzchen);
-
-      for (var j = 0; j < anzahlHerzchen; j++){
-        herzchenString += herzchen;
-      }
-      var list = document.createElement("ul");
-      document.getElementById("target").appendChild(list);
-      list.innerText = herzchenString;
-      console.log(herzchenString)
-      list.appendChild(listItem);
-      /*
-      for (var i = 2; i < 10; i++) {
-        var text = "Hallo Mona hier sind " + i + '';
-        var listItem = document.createElement("li");
-        listItem.innerText = text;
-        list.appendChild(listItem);
-      }
-      */
-    }
-    </script>
+    <script src="js/custom.js"></script>
   </body>
 </html>
