@@ -22,3 +22,12 @@
 .mona:hover {
     color: rgb(100,0,0);
 }
+
+.translucent {
+    opacity: 0.5;
+}
+
+.margin-top-bottom {
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+}
